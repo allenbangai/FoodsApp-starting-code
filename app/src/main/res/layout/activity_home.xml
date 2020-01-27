@@ -19,17 +19,63 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorBackground">
+
         <RelativeLayout
             android:id="@+id/headerView"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="300dp">
-            <!-- TODO 1 Add <View>-->
-            <!-- TODO 2 Add <TextView> for Title of Header -->
 
-            <!-- TODO 3 Add Search container -->
-            <!-- We will make a look for the search box with CardView and TextView (this is only for click actions because later we will create another Activity to search) -->
-            <!-- TODO 4 Add <ViewPager> with id viewPagerHeader -->
+            <!-- TODO 1 Add <View> **Done**-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorOrange" />
+
+
+            <!-- TODO 2 Add <TextView> for Title of Header **Done**-->
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="@dimen/dimension_16dp"
+                android:layout_marginRight="@dimen/dimension_16dp"
+                android:layout_marginTop="20dp"/>
+
+            <!-- TODO 3 Add Search container **Done** -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardSearch"
+                android:layout_marginLeft="@dimen/dimension_16dp"
+                android:layout_marginRight="@dimen/dimension_16dp"
+                android:layout_marginTop="@dimen/dimension_16dp"
+                android:layout_below="@+id/Title"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="@dimen/dimension_10dp"
+                app:cardElevation="0dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimension_10dp"
+                    android:text="@string/search_your_recipes"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/dimension_20sp"
+                    android:drawableLeft="@drawable/ic_search_primary_light"
+                    android:drawableStart="@drawable/ic_search_primary_light"
+                    android:drawablePadding="@dimen/dimension_10dp"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <!-- TODO 4 Add <ViewPager> with id viewPagerHeader **Done**-->
+
 
             <!-- TODO 5 Delete comment to <include below -->
             <!--<include android:id="@+id/shimmerMeal"
