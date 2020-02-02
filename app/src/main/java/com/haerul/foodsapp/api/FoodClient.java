@@ -16,12 +16,14 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class FoodClient {
 
-    // TODO 10 Add BASE url
-    private static final String BASE_URL = "";
+    // TODO 10 Add BASE url **Done**
+    private static final String BASE_URL = "https://www.themealdb.com/api/json/v1/1/";
 
     public static Retrofit getFoodClient() {
-        // TODO 11 configures Retrofit
-        return null;
+        // TODO 11 configures Retrofit **Done**
+
+        return new Retrofit.Builder().baseUrl(BASE_URL).client(provideOkHttp())
+                .addConverterFactory(GsonConverterFactory.create()).build();
     }
 
     private static Interceptor provideLoggingInterceptor() {

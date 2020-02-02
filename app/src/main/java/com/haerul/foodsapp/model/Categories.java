@@ -15,7 +15,7 @@ public class Categories {
 
     @SerializedName("categories")
     @Expose
-    private List<Category> categories;
+    private List<Category> categories = null;
 
     public List<Category> getCategories() {
         return categories;

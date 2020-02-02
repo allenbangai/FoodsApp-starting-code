@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Developed by Haerul Muttaqin
+  Last modified 1/27/20 10:06 PM
+  Subscribe : https://www.youtube.com/haerulmuttaqin
+  Copyright (c) 2020. All rights reserved
+  -->
+
+<resources>
+    <dimen name="dimension_16dp">16dp</dimen>
+    <dimen name="dimension_10dp">10dp</dimen>
+    <dimen name="dimension_20sp">20sp</dimen>
+</resources>
